@@ -49,6 +49,10 @@ set(CPACK_PACKAGE_INSTALL_DIRECTORY "${PROJECT_NAME}")
 set(CPACK_PACKAGE_EXECUTABLES "main" "main")
 
 # set auto start when boot up
+# no idea now
+
+# icon
+# set(CPACK_NSIS_INSTALLED_ICON_NAME  "${CMAKE_CURRENT_SOURCE_DIR}/icon.ico")
 
 # cpack to zip
 # set(CPACK_GENERATOR "ZIP")
