@@ -9,6 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+string(TIMESTAMP TIME "%Y-%m-%d %H:%M")
 configure_file(version_info.cpp.in version_info.cpp @ONLY)
 add_library(version_info  SHARED version_info.cpp)
 # add public header
