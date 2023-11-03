@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.0)
+cmake_minimum_required(VERSION 3.21.0)
 project(version_info VERSION 0.1.0 LANGUAGES C CXX)
 
 include(CTest)
@@ -42,24 +42,11 @@ set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 set(CPACK_PACKAGE_DIRECTORY "${CMAKE_BINARY_DIR}/package")
 # set install dir name
 set(CPACK_PACKAGE_INSTALL_DIRECTORY "${PROJECT_NAME}")
-# set package name, default is has version number.
-# set(CPACK_PACKAGE_FILE_NAME "${CPACK_PACKAGE_INSTALL_DIRECTORY}")
 
-# set short cut for execute file
 set(CPACK_PACKAGE_EXECUTABLES "main" "main")
 
-# set auto start when boot up
-# no idea now
 
-# icon
-# set(CPACK_NSIS_INSTALLED_ICON_NAME  "${CMAKE_CURRENT_SOURCE_DIR}/icon.ico")
-
-# cpack to zip
-# set(CPACK_GENERATOR "ZIP")
 include(CPack)
-
-# install(TARGETS version_info RUNTIME)
-# install(TARGETS print RUNTIME)
 
 install(TARGETS main  DESTINATION bin) # exclude ms-win
 
